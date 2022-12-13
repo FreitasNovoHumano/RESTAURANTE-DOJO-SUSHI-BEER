@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133416507-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133416507-1');
+</script>
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dojo Sushi Beer</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<i class="fas fa-fish"></i> &nbsp; &nbsp;
+			<a class="navbar-brand h1 mb-0" href="index.html">Dojo Sushi Beer</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDojo">
+			<span class="navbar-toggler-icon"></span>
+		</button> <!-- controle do botão da nav, tipo e redirecionamento do botão -->
+
+		<div class="collapse navbar-collapse" id="navbarDojo"> <!--Redireciona para o menu quando clicar no botao -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="quemSomos.hhtml">Quem Somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cardapio.html">cardápio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="comoChegar.html">Como Chegar</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="faleConosco.html">Fale-Conosco</a>
+				</li>
+			</ul>
+
+			<form class="form-inline"> <!--Formulario em linha-->
+				<input class="form-control ml-4 mr-2" type="search" name="" placeholder="Buscar..."> <!--Configuraão do botão de busca e o que está escrito dentro do campo de pesquisa-->
+				<button class="btn btn-default" type="submit">OK</button>
+			</form>
+		</div>
+	</nav>
+
+	
+
+	<!--FORMULARIOS COM BOOTSTRAP-->
+		<div class="row justify-content-center mb-5">
+			<div class="col-sm-12 col-md-10 col-lg-8">
+				<form name="form" method="post" id="fContato" action="mailto:fabiofreitas82@aedu.com" onsubmit="return Validacao"();">
+					<div class="form-row">
+						<div class="form-group col-sm-6"><!-- COL-SM-6, indica que irá oculpar 50% da tela-->
+							<label for="nome">Nome</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome">
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="sobrenome">Sobrenome</label>
+							<input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+						</div>
+
+						<div class="form-group col-sm-12"><!--COL-SM-12, oculpa 100% da tela-->
+							<label for="email">E-mail</label>
+							<input type="text" class="form-control" id="email" placeholder="Endereço de E-mail">
+						</div>
+
+						<div class="form-group col-sm-6"><!--COL-SM-12, oculpa 100% da tela-->
+							<label for="telefone">Telefone</label>
+							<input type="text" class="form-control" id="telefone" placeholder="Telefone com o DDD">
+						</div>
+
+						<div class="form-group col-sm-6"><!--COL-SM-12, oculpa 100% da tela-->
+							<label for="endereço">Endereço</label>
+							<input type="text" class="form-control" id="endereço" placeholder="Endereço opcional">
+						</div>					
+					</div>
+
+					<fieldset id="mensagem">
+                        <legend> Mensagem do Usuário</legend>
+                        <p><label for="cMsg">Mensagem: &nbsp;</label><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite aqui sua Mensagem"></textarea> </p>
+                    </fieldset>
+
+					<!--Botão de envio-->
+					<!--TYPE="SUBMIT" botão de envio. BTN-PRIMARY é a cor do botão-->
+					<!--POPOVER- botão de ajuda linha 359-->
+					<div class="form-row"><!-- Linha do BOTÃO-->
+						<div class="col-sm-12">
+							<button type="submit" action="mailto:fabiofreitas82@aedu.com" class="btn btn-primary"><i class="fas fa-envelope-square mr-2"></i>Enviar</button>
+							<a class="btn btn-secondary ml-2" tabindex="0" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Ajudo com o Formulário" data-content="Preencha o formulário para receber informações em seu email..."><i class="fas fa-info mr-2"></i>Ajuda</a>
+						</div>							
+					</div>					
+				</form>
+			</div>
+		</div>
+
+	<!--RODAPÉ COM JOMBOTRON-->
+		
+		<div class="row mt-5">
+			<div class="col-12"><hr></div>
+			<div class="col-12 text-center my-3">
+				<h3 class="Display-5 mb-3"><i class="fas fa-envelope-open mr-2"></i>Contate nos</h1>
+			</div>
+		<div class="container">
+			<div class="row">			
+			</div>
+		
+		<div class="row mt-5">
+			<div class="col-12"></div>
+			<div class="col-sm-4">
+				<h3 class="Display-5 ml-4">Funcionamento</h3>
+				<ul>
+					<li>Quarta e Quinta, de 18h à 00h</li>
+					<LI>Sexta e sábado, de 18h à 00h</LI>
+					<LI>Domingo, de 17h à 22:30 (samba)</LI>
+				</ul>
+				
+			</div>
+			<div class="col-sm-4">
+				<h3 class="Display-5 ml-4">Contatos</h3>
+				<ul>
+					<li><i class="fas fa-utensils mr-2"></i>(31) 3456-7576</li>
+					<li><i class="fab fa-whatsapp-square mr-2" alt="31 98956-1523" title="31 98956-1523"></i></li>
+					<li><i class="fab fa-whatsapp-square mr-2" alt="31 98956-1523" title="31 98956-1523"></i></li>
+				</ul>
+				
+			</div>
+			<div class="col-sm-2">
+				<h3 class="Display-5 mb-3">Social</h3>
+				<div class="btn-group-vertical" role="group"><!--Alinhando os botões na vertical-->
+				<a href="https://https://www.facebook.com/virgilio.silveira.921" class="btn btn-light"><h5 class="mb-2"><i class="fab fa-facebook mr-2"></i>Facebook</h5></a>				
+				<a href="mailto:sushidojo@yahoo.com" class="btn btn-light"><h5 class="mb-2"><i class="fas fa-envelope-square mr-4"></i>&nbsp; E-mail</h5></a>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="col-12 my-5">
+				<blockquote class="blockquote text-center">
+					<p>Copyright &copy; 2019. Todos os direitos reservados - by Fábio de Freitas Ferreira.</p>
+					<footer class="blockquote-footer">
+						Bacharel em Sistema de Informação
+					<cite title="Titulo">Desenvolvimento Web</cite>
+					<p><a href="https://www.facebook.com/fabio.ferreira.332/" target="_blank"><img id="icone"src="img/facebook.jpg" alt="facebook"></a>&nbsp&nbsp&nbsp&nbsp <!--trarget black, fase o link abrir em outra--> 
+				<a href="mailto:fabiofreitas82@aedu.com"><img src="img/email.jpg"></a></p>
+					</footer>
+				</blockquote>
+			</div>
+</body>
+</html>
+
+<!-- Configuração java script para o POPOVER-->
+<!--POPOVER exige utilização do arquivo BUNDLE.JS que se encontra no seguinte caminho: <script type="text/javascript" src="js/bootstrap.bundle.js"></script>-->
+<script type="text/javascript">
+	$(function(){
+		$('[data-toggle="popover"]').popover()
+	})
+</script>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133416507-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133416507-1');
+</script>
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dojo Sushi Beer</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<i class="fas fa-fish"></i> &nbsp; &nbsp;
+			<a class="navbar-brand h1 mb-0" href="index.html">Dojo Sushi Beer</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDojo">
+			<span class="navbar-toggler-icon"></span>
+		</button> <!-- controle do botão da nav, tipo e redirecionamento do botão -->
+
+		<div class="collapse navbar-collapse" id="navbarDojo"> <!--Redireciona para o menu quando clicar no botao -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="quemSomos.html">Quem Somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cardapio.html">cardápio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="comoChegar.html">Como Chegar</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="faleConosco.html">Fale-Conosco</a>
+				</li>
+			</ul>
+
+			<form class="form-inline"> <!--Formulario em linha-->
+				<input class="form-control ml-4 mr-2" type="search" name="" placeholder="Buscar..."> <!--Configuraão do botão de busca e o que está escrito dentro do campo de pesquisa-->
+				<button class="btn btn-default" type="submit">OK</button>
+			</form>
+		</div>
+	</nav> &nbsp;
+
+	<div id="carouselSite" class="carousel slide" data-ride="carousel">
+		<!-- Classe da parte interna do slide-->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/dojo1.jpg" class="img-fluid d-block"> <!--Imagens responsivas para todos os dispositivos-->
+				<!--Inserindo legenda no slide-->
+				<div class="carousel-caption d-none d-md-block text-gray">
+					<h1>Venha Saborear o Melhor Sushi de Ribeirão das Neves e região</h1>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/dojo2.jpg" class="img-fluid d-block"> 
+				<div class="carousel-caption d-none d-md-block text-gray">
+					<h1>Venha Saborear o Melhor Sushi de Ribeirão das Neves e região</h1>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/dojo3.jpg" class="img-fluid d-block"> 
+				<div class="carousel-caption d-none d-md-block text-gray">
+					<h1>Venha Saborear o Melhor Sushi de Ribeirão das Neves e região</h1>
+				</div>
+			</div>
+		</div>
+		<!--Criando e configurando os botões de retorno e avanço do slide -->
+		<!-- A # antes da referencia informa que é para a mesma pagina -->
+		<a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+			<span class="sr-only">Anterior</span> <!--Interpleta o botão do slide visando acenssibilidade-->
+		</a> 
+
+		<a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+			<span class="sr-only">Posterior</span>
+		</a> 
+	</div>
+
+	<!--CARDES-->
+	<div class="container"><!-- my-5 na linha abaixo é o espaçamento entre o container e o slide-->
+		<div class="row"><!--Armazena as colunas internamente de melhor forma-->
+			<div class="col-12 text-center my-5"> 
+				<h1 class="display-3">
+					<img src="img/logo.jpg">Bem Vindos!!!</h1>
+				<p>Seja bem vindo ao melhor restaurante de Sushi de Ribeirão das Neves e região!!!</p>
+				<p>Venha já esperimentar uma de nossos sushi ou de um de nossos pratos listado abaixo!!!</p>
+			</div>
+		</div>
+		<div class="row justify-contente-sm-center">
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#siteModal" class="card-link">
+					<img class="card-img-top" src="img/foto09.jpg"></a><!--Imagen do card no topo do card-->
+					<div class="card-body"> <!--Corpo do Card-->
+						<h4 class="card-title">Self Service</h4><!--Titulo do card-->						
+						<h6 class="card-subtitle mb-2 text-muted">Conheça já Nosso Self Service</h6>
+						<a href="#" data-toggle="modal" data-target="#siteModal" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi" class="card-link">
+					<img class="card-img-top" src="img/foto10.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Self Service</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Conheça já Nosso Self Service </h6>
+						<a href="#" data-toggle="modal" data-target="#areaSushi" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi1" class="card-link">
+					<img class="card-img-top" src="img/foto11.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Self Service</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Conheça já Nosso Self Service</h6>
+						<a href="#" data-toggle="modal" data-target="#areaSushi1" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-contente-sm-center">
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi2" class="card-link">
+					<img class="card-img-top" src="img/foto4.jpg"></a><!--Imagen do card no topo do card-->
+					<div class="card-body"> <!--Corpo do Card-->
+						<h4 class="card-title">Niguiri Kani</h4><!--Titulo do card-->				
+						<p class="card-text"></p>						
+						<a href="#" data-toggle="modal" data-target="#areaSushi2" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi3" class="card-link">
+					<img class="card-img-top" src="img/foto6.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Temaki Kani</h4>
+						<p class="card-text"></p>
+						<a href="#" data-toggle="modal" data-target="#areaSushi3" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi4" class="card-link">
+					<img class="card-img-top" src="img/salmonnigiri-1.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Niguiri Salmão</h4>
+						<p class="card-text"></p>				
+						<a href="#" data-toggle="modal" data-target="#areaSushi4" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi5" class="card-link">
+					<img class="card-img-top" src="img/foto08.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Fritas</h4>
+						<p class="card-text"></p>				
+						<a href="#" data-toggle="modal" data-target="#areaSushi5" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi6" class="card-link">
+					<img class="card-img-top" src="img/foto01.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Contra Filé com Fritas</h4>
+						<p class="card-text"></p>
+						<a href="#" data-toggle="modal" data-target="#areaSushi6" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi7" class="card-link">
+					<img class="card-img-top" src="img/foto02.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Coraçãozinho com Fritas</h4>
+						<p class="card-text"></p>				
+						<a href="#" data-toggle="modal" data-target="#areaSushi7" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-contente-sm-center">
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi8" class="card-link">
+					<img class="card-img-top" src="img/foto03.jpg"></a><!--Imagen do card no topo do card-->
+					<div class="card-body"> <!--Corpo do Card-->
+						<h4 class="card-title">Lombo com Fritas</h4><!--Titulo do card-->			
+						<p class="card-text"></p>						
+						<a href="#" data-toggle="modal" data-target="#areaSushi8" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi9" class="card-link">
+					<img class="card-img-top" src="img/foto05.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Picanha com Fritas</h4>
+						<p class="card-text"></p>
+						<a href="#" data-toggle="modal" data-target="#areaSushi9" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>			
+
+			<div class="row justify-contente-sm-center">
+			<div class="col-sm-6 col-md-4 mb-5">
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi10" class="card-link">
+					<img class="card-img-top" src="img/refrigerantes.jpg"></a><!--Imagen do card no topo do card-->
+					<div class="card-body"> <!--Corpo do Card-->
+						<h4 class="card-title">Refigerantes</h4><!--Titulo do card-->				
+						<p class="card-text"></p>						
+						<a href="#" data-toggle="modal" data-target="#areaSushi10" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi11" class="card-link">
+					<img class="card-img-top" src="img/sucoAcerola.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Suco de Polpa de Acerola</h4>
+						<p class="card-text"></p>
+						<a href="#" data-toggle="modal" data-target="#areaSushi11" class="card-link">Saiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6 col-md-4 mb-5"><!--COL-SM-6 COL-MD-4 deixa as colunas responsiva-->
+				<div class="card">
+					<a href="#" data-toggle="modal" data-target="#areaSushi12" class="card-link">
+					<img class="card-img-top" src="img/sucoLaranja.jpg"></a>
+					<div class="card-body">
+						<h4 class="card-title">Suco de Laranja Natural</h4>
+						<p class="card-text"></p>				
+						<a href="#" data-toggle="modal" data-target="#areaSushi12" class="card-link">ÁSaiba Mais</a>
+						<!--<a href="#" class="card-link">Saiba Mais</a>-->
+					</div>
+				</div>
+			</div>
+
+		<!--jANELAS MODAL-->
+
+		<div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Sushi Self Service</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12">
+					<p>Venha já esperimentar nosso Sushi!!! </p>	
+					<img src="img/foto09.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Sushi Self Service</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>Venha já esperimentar nosso Sushi!!! </p>	
+					<img src="img/foto10.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar	
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi1" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Sushi Self Service</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>Venha já esperimentar nosso Sushi!!! </p>	
+					<img src="img/foto11.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi2" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Niguiri Kani</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>É um bastão feito com carne de peixe sabor imitação de carne de caranguejo. Em japonês, kani significa caranguejo e deu origem ao nome do produto porque é aromatizado com extrato ou carne desse crustáceo. </p>	
+					<img src="img/foto4.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi3" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Temaki Kani</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>É um Sushi em forma de cone de alga com arroz e sushis recheado com kani cream cheese e cebolinha.</p>	
+					<img src="img/foto6.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="areaSushi4" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Niguiri Salmão ou Sashimi</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>Niguiri é um tipo de sushi feito com uma fatia de peixe cru sobre o arroz prensado.... Sashimi é uma carne crua em fatias finas - geralmente peixes, como o salmão ou o atum.</p>	
+					<img src="img/salmonnigiri-1.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi5" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Pratos Servido em nosso Restaurante</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>Fritas com bacon e queijo. Também sem queijo e sem bacon ao gosto do cliente. </p>	
+					<img src="img/foto08.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="modal fade" id="areaSushi6" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Contra Filé com Fritas</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p></p>	
+					<img src="img/foto01.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi7" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Coraçãozinho com Fritas</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p></p>	
+					<img src="img/foto02.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi8" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Lombo com Fritas</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p> </p>	
+					<img src="img/foto03.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi9" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Picanha com Fritas</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p></p>	
+					<img src="img/foto05.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi10" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Refrigerantes</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p></p>	
+					<img src="img/refrigerantes.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi11" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Suco de Polpa de Acerola</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+							<h6>Benefícios do Suco de Acerola:</h6>
+							<p>Aumentar a imunidade, ajudar na cicatrização e ter ação antioxidante são apenas alguns dos benefícios da acerola. Conheça outros tão importantes e ainda receitas de sucos super fáceis de fazer.</p>
+					<p>OBS: os sucos podem ser feitos tanto com a polpa quanto com a própria fruta.</p>	
+					<img src="img/sucoAcerola.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi12" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Suco de Laranja Natural</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>A laranja é uma das frutas mais conhecidas e consumidas em todo o mundo. 
+					...</p>
+					<p>Pela presença da vitamina C e de flavonoides, que têm ação antioxidante, o suco pode ajudar na redução do colesterol sanguíneo, que quando elevado pode levar ao desenvolvimento de doenças cardiovasculares. Ele contém ácido fólico, a famosa vitamina B9, que é importante para o organismo.</p>
+					<img src="img/sucoLaranja.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="areaSushi13" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content"> <!--Para inserir o conteudo do modal-->
+				<div class="modal-header"><!--Estrutura um cabeçalho-->
+					<h5 class="modal-title">Sushi Self Service</h5>
+					<button type="button" class="close" data-dismiss="modal"><!--DATA-DISMISS: é um botão para fechar a janela de dialogo-->
+						<span>&times;</span><!--botão de fechamento-->
+					</button>
+				</div>
+				<div class="modal-body"> <!--corpo da área-->
+					<div class="container-fluid"><!--class do container fluido-->
+						<div class="row">
+							<div class="col-12"
+					<p>Ambiente aconchegante e rústica para reuniões em família e comemorações festivas e samba aos domingo </p>	
+					<img src="img/sucoLaranja.jpg" width="100%">			
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer"><!--roda pé do modal-->
+					<button type="button" class="btn btn-danger" data-dismiss="modal">
+						Fechar
+					</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+	<!--RODAPÉ COM JUMBOTRON-->
+
+		<div class="row mt-5">
+			<div class="col-12"><hr></div>
+			<div class="col-12 text-center my-3">
+				<h3 class="Display-5 mb-3"><i class="fas fa-envelope-open mr-2"></i>Contate nos</h1>
+			</div>
+		<div class="container">
+			<div class="row">			
+			</div>
+		
+		<div class="row mt-5">
+			<div class="col-12"></div>
+			<div class="col-sm-4">
+				<h3 class="Display-5 ml-4">Funcionamento</h3>
+				<ul>
+					<li>Quarta e Quinta, de 18h à 00h</li>
+					<LI>Sexta e sábado, de 18h à 00h</LI>
+					<LI>Domingo, de 17h à 22:30 (samba)</LI>
+				</ul>
+				
+			</div>
+			<div class="col-sm-4">
+				<h3 class="Display-5 ml-4">Contatos</h3>
+				<ul>
+					<li><i class="fas fa-utensils mr-2"></i>(31) 3456-7576</li>
+					<li><i class="fab fa-whatsapp-square mr-2" alt="31 98956-1523" title="31 98956-1523"></i></li>
+					<li><i class="fab fa-whatsapp-square mr-2" alt="31 98956-1523" title="31 98956-1523"></i></li>
+				</ul>
+				
+			</div>
+			<div class="col-sm-2">
+				<h3 class="Display-5 mb-3">Social</h3>
+				<div class="btn-group-vertical" role="group"><!--Alinhando os botões na vertical-->
+				<a href="https://https://www.facebook.com/virgilio.silveira.921" class="btn btn-light"><h5 class="mb-2"><i class="fab fa-facebook mr-2"></i>Facebook</h5></a>				
+				<a href="mailto:sushidojo@yahoo.com" class="btn btn-light"><h5 class="mb-2"><i class="fas fa-envelope-square mr-4"></i>&nbsp; E-mail</h5></a>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+			<div class="col-12 my-5">
+				<blockquote class="blockquote text-center">
+					<p>Copyright &copy; 2019. Todos os direitos reservados - by Fábio de Freitas Ferreira.</p>
+					<footer class="blockquote-footer">
+						Bacharel em Sistema de Informação
+					<cite title="Titulo">Desenvolvimento Web</cite>
+					<p><a href="https://www.facebook.com/fabio.ferreira.332/" target="_blank"><img id="icone"src="img/facebook.jpg" alt="facebook"></a>&nbsp&nbsp&nbsp&nbsp <!--trarget black, fase o link abrir em outra--> 
+				<a href="mailto:fabiofreitas82@aedu.com"><img src="img/email.jpg"></a></p>
+					</footer>
+				</blockquote>
+			</div>
+				
+</body>
+</html>
+
+<!-- Configuração java script para o POPOVER-->
+<!--POPOVER exige utilização do arquivo BUNDLE.JS que se encontra no seguinte caminho: <script type="text/javascript" src="js/bootstrap.bundle.js"></script>-->
+<script type="text/javascript">
+	$(function(){
+		$('[data-toggle="popover"]').popover()
+	})
+</script>
+
